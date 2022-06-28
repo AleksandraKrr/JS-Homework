@@ -32,7 +32,7 @@
   gap: 10px;
 
   min-height: 50px;
-  margin: 0px auto;
+  margin: 0 auto;
   max-width: 960px;
 
   color: #727989;
@@ -62,7 +62,7 @@
 
   max-width: 960px;
   height: 40px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .menu_mobile {
@@ -138,7 +138,7 @@
   
   min-height: 91vh;
   max-width: 960px;
-  margin: 0px auto;
+  margin: 0 auto;
 
   background-color: white;
   box-shadow: 0 3px 10px #e0e2e6;
@@ -161,7 +161,6 @@
 }
 
 .submenu_item_header {
-  padding-bottom: 9px;
   padding: 9px 28px 9px 23px;
   border-left: solid white 5px;
 
@@ -502,10 +501,9 @@
 .footer_list {
   display: flex;
   gap: 18px;
-  padding: 14px 0;
+  padding: 14px 0 0 28px;
 
   list-style: none;
-  padding-left: 28px; 
 }
 
 .footer_list-link {
@@ -565,7 +563,7 @@
 @media screen and (max-width:768px) {
   .filter-section {
     gap: 8px; 
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 
@@ -660,8 +658,8 @@
 
   .main_title-section .city {
     padding-left: 10px;
-    padding-right: 0px;
-    margin-left: 0px;
+    padding-right: 0;
+    margin-left: 0;
     font-size: 34px;
   }
 
@@ -678,7 +676,7 @@
   }
 
   .post-statistics {
-    padding: 8px 0px;
+    padding: 8px 0;
   }
 
   .search-form {
