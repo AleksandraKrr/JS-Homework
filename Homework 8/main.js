@@ -1,40 +1,37 @@
 // Задание 1:
 
-var arr = [-1, 0, 2, 34, -2];
+function filterNumbersArr (arr) {
+  return arr.filter(function(number) {
+    return number > 0;
+  });
+}
 
-var filterNumbersArr = arr.filter(function(number) {
-  return number > 0;
-});
-
-filterNumbersArr;
+filterNumbersArr([-1, 0, 2, 34, -2]);
 
 //   Задание 2:
 
-var arr = [-1, 0, 2, 34, -2];
+function findFirstPositiveNumber (arr) {
+  return arr.find(function(number) {
+    return number > 0;
+  });
+}
 
-var findFirstPositiveNumber = arr.find(function(number) {
-  return number > 0;
-});
-
-findFirstPositiveNumber;
+findFirstPositiveNumber ([-1, 0, 2, 34, -2]);
 
 //ИЛИ
 
-var arr = [-1, 0, 2, 34, -2];
+function filterFirstPositiveNumber (arr) {
+  return arr.filter(function(number) {
+    return number > 0;
+  })[0];
+}
 
-var filterFirstPositiveNumber = arr.filter(function(number) {
-  return number > 0;
-})[0];
-
-filterFirstPositiveNumber;
+filterFirstPositiveNumber ([-1, 0, 2, 34, -2]);
 
 //   Задание 3:
 
 function isPalindrome (word) {
-  var wordForAnalysis = word.toLowerCase(),
-      reversedWord = wordForAnalysis.split('').reverse().join('');
-
-  return (wordForAnalysis === reversedWord) ? true : false;
+  return (word.toLowerCase() === word.toLowerCase().split('').reverse().join(''));
 }
 
 isPalindrome ('шАлаШ');
@@ -43,10 +40,7 @@ isPalindrome ('привет');
 //   Задание 4:
 
 function areAnagrams (word1, word2) {
-  var word1ForAnalysis = word1.toLowerCase().split('').sort().join(''),
-      word2ForAnalysis = word2.toLowerCase().split('').sort().join('');
-
-  return (word1ForAnalysis === word2ForAnalysis) ? true : false;
+  return (word1.toLowerCase().split('').sort().join('') === word2.toLowerCase().split('').sort().join(''));
 }
 
 areAnagrams ('оно', 'ООН');
@@ -74,7 +68,7 @@ divideArr([1, 2, 3, 4, 5], 0);
 //   Задание 6 *:
 
 function isPowOfTwo (number) {
-  var value = 1;
+  var value = 0;
 
   if (number === 1) {
     return true;
@@ -98,4 +92,5 @@ function isPowOfTwo (number) {
   }  
 }
 
+isPowOfTwo (0);
 isPowOfTwo (1024);
