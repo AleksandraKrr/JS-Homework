@@ -1,0 +1,28 @@
+.label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button {
+  margin: 0 0 20px 20px;
+}
+
+table {
+  border: 1px solid black;
+
+  /* background-color: blue; */
+}
+
+td {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
