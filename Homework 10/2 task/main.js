@@ -1,13 +1,13 @@
 //Задание 1:
 
 var button = document.querySelector('th'),
-    table = document.querySelector('tbody'),
-    line = table.firstElementChild;
+    table = document.querySelector('tbody');
 
 button.addEventListener ('click', addNewLine);
 
 function addNewLine () {
-  var newLine = document.createElement('tr'),
+  var line = table.firstElementChild,
+      newLine = document.createElement('tr'),
       cell1 = document.createElement('td'),
       cell2 = document.createElement('td'),
       cell3 = document.createElement('td');

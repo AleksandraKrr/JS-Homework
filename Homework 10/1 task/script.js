@@ -12,11 +12,11 @@ container.appendChild(secondPar);
 var button = document.querySelector('button');
 
 function searchLinks () {
-  var firstLink = firstPar.firstElementChild,
-      secondLink = firstPar.lastElementChild;
+  var linksArr = firstPar.getElementsByTagName('a');
 
-  firstLink.setAttribute('class', 'links');
-  secondLink.setAttribute('class', 'links');
+  for (var i = 0; i < linksArr.length; i++) {
+    linksArr[i].classList.add('links');
+  }
 }
 
 button.addEventListener ('click', searchLinks);
