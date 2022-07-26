@@ -2,33 +2,26 @@
 
 function arrayTransform (namesArr) {
  
-  var namesObjArray = namesArr.map(function(name){
+  return namesArr.map(function(name){
     var namesObj = {};
     namesObj['name'] = name;
     return namesObj;
   });
-
-  return namesObjArray;
 }
 
-var namesArr = ['Vasya', 'Petya', 'Tolya', 'Roma'];
-
-arrayTransform (namesArr);
+arrayTransform (['Vasya', 'Petya', 'Tolya', 'Roma']);
 
 //   Задание 2:
 
 function currentTime (timeArr) {
 
-  var timeString  = timeArr.reduce(function(prev, time) {
+  return timeArr.reduce(function(prev, time) {
     return prev + ' : ' + time;
 
   }, 'Текущее время');
-  return timeString;
 }
 
-var timeArr = ['00', '13', '24'];
-
-currentTime (timeArr);
+currentTime (['00', '13', '24']);
 
 //   Задание 3:
 
