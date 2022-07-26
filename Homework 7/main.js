@@ -43,7 +43,6 @@ Cat.prototype.stroke = function () {
   console.log('Гладим кота.'); return this;
 }
 
-
 //для проверки:
 var barsik = new Cat('Барсик');
 
@@ -57,7 +56,6 @@ barsik.feed();
 
 console.log(barsik.dailyNorm(75));
 barsik.feed();
-
 
 //2 задание
 
