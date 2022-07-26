@@ -3,7 +3,7 @@
 function Animal (name) {
   this._foodAmount = 50;
   
-  this._name = name;
+  this.name = name;
 }
 
 Animal.prototype._formatFoodAmount = function () {
@@ -27,8 +27,6 @@ Animal.prototype.feed = function() {
 
 function Cat(name) {
   Animal.apply(this, arguments);
-
-  this._animalFeed = this.feed;
 }
 
 Cat.prototype = Object.create(Animal.prototype);
