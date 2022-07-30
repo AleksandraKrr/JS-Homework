@@ -144,7 +144,7 @@ function showInfo () {
       wrapper.insertBefore(errorBox, requestButton);
     };
     
-    xhr.onloadend = function() { //не уверена, что это вообще нужно
+    xhr.onloadend = function() {
       console.log('Запрос завершен');
     };
   }
